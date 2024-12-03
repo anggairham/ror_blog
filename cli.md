@@ -11,4 +11,8 @@ Article.find(1)
 Article.all
 
 ruby bin/rails routes 
+
+ruby bin/rails generate model Comment commenter:string body:text article:references
+ruby bin/rails db:migrate
+ruby bin/rails generate controller Comments
 ```
